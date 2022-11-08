@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+spec:
+  selector:
+    matchLabels:
+      name: web
+  template:
+    metadata:
+      labels:
+        name: web
+    spec:
+      containers:
+      - name: web
+        image: hungdq1379/docker1379:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 200m
+      imagePullSecrets:
+      - name: ciond-project4
