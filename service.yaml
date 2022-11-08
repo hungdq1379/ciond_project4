@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 80
+    - port: 8080
       targetPort: 80
       nodePort: 30039
       name: port-npt-kube
