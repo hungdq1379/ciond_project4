@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web
+  name: webForProject4
 spec:
   selector:
     matchLabels:
-      name: web
+      name: webForProject4
   template:
     metadata:
       labels:
-        name: web
+        name: webForProject4
     spec:
       containers:
-      - name: web
+      - name: webForProject4
         image: hungdq1379/docker1379:latest
         ports:
         - containerPort: 80
