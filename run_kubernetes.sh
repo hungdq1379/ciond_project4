@@ -15,4 +15,5 @@ kubectl apply -f deployment.yaml
 kubectl get pods
 # Step 4:
 # Forward the container port to a host
+kubectl port-forward flaskskearlndemo 8000:80
 kubectl apply -f service.yaml
